@@ -18,7 +18,6 @@ pipeline {
                 }
             }
             steps {
-                sh 'sudo -H pip install gitpython'
                 sh 'python3 -m swdb_update.py'
 
             }
