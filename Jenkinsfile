@@ -1,14 +1,14 @@
 pipeline {
-    agent none
+    agent none 
     stages {
-        stage('Build') {
+        stage('Build') { 
             agent {
                 docker {
-                    image 'python:2-alpine'
+                    image 'python:2-alpine' 
                 }
             }
             steps {
-                sh 'python3 -m py_compile swdb_update.py'
+                sh 'python3 -m py_compile swdb_update.py' 
             }
         }
     }
