@@ -4,7 +4,7 @@ pipeline {
         stage('Build') { 
             agent {
                 docker {
-                    image 'python:3.7-slim-stretch' 
+                    image 'python:3.7-stretch' 
                 }
             }
             steps {
@@ -14,7 +14,7 @@ pipeline {
         stage('Run') { 
             agent {
                 docker {
-                    image 'python:3.7-slim-stretch' 
+                    image 'python:3.7-stretch' 
                 }
             }
             steps {
