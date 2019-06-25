@@ -8,7 +8,8 @@ pipeline {
                 }
             }
             steps {
-                sh 'export PYTHONPATH=$WORKSPACE:$PYTHONPATH'
+                sh 'pip install requests'
+                sh 'pip install gitpython'
                 sh 'python3 -m py_compile swdb_update.py' 
             }
         }
