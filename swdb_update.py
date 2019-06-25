@@ -5,7 +5,7 @@
 import sys
 import json
 import uuid
-import git
+
 import os
 import time
 import datetime
@@ -14,9 +14,11 @@ import threading
 from datetime import date
 from pprint import pprint
 from getpass import getpass
-
-
 import requests
+
+# Fix Jenkins missing imports
+sys.path.append(os.environ['WORKSPACE'])
+import git
 
 # Consider using the Requests-OAuthlib libary
 
