@@ -17,7 +17,7 @@ from getpass import getpass
 
 
 # Fix Jenkins missing imports
-sys.path.append(os.environ['WORKSPACE'])
+#sys.path.append(os.environ['WORKSPACE'])
 import git
 import requests
 

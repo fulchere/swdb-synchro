@@ -8,6 +8,7 @@ pipeline {
                 }
             }
             steps {
+                sh 'export PYTHONPATH=$WORKSPACE:$PYTHONPATH'
                 sh 'python3 -m py_compile swdb_update.py' 
             }
         }
