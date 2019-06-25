@@ -8,7 +8,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'python -m py_compile swdb_update.py' 
+                sh 'python3 -m py_compile swdb_update.py' 
             }
         }
         stage('Run') { 
@@ -18,7 +18,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'python -m swdb_update.py'
+                sh 'python3 -m swdb_update.py'
             }
         }
     }
