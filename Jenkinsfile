@@ -8,8 +8,9 @@ pipeline {
                 }
             }
             steps {
-                sh 'pip install requests'
-                sh 'pip install gitpython'
+                sh 'python3'
+                sh 'import git'
+                sh 'exit()'
                 sh 'python3 -m py_compile swdb_update.py' 
             }
         }
