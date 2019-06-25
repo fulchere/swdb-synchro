@@ -4,11 +4,11 @@ pipeline {
         stage('Build') { 
             agent {
                 docker {
-                    image 'python:2-alpine' 
+                    image 'python:3.7-slim-stretch' 
                 }
             }
             steps {
-                sh 'python3 -m py_compile swdb_update.py' 
+                sh 'python -m py_compile swdb_update.py' 
             }
         }
     }
