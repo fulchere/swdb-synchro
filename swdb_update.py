@@ -165,4 +165,5 @@ for t in t_ls:
     
 
 print("\ndone updating swdb")
+print("\nSCRIPT EXECUTED SUCCESSFULLY")
 
