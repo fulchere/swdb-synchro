@@ -8,7 +8,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'python -m py_compile swdb_update.py
+                sh 'python -m py_compile swdb_update.py'
             }
         }
     }
