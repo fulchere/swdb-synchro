@@ -8,9 +8,6 @@ pipeline {
                 }
             }
             steps {
-                sh 'python3'
-                sh 'import git'
-                sh 'exit()'
                 sh 'python3 -m py_compile swdb_update.py' 
             }
         }
