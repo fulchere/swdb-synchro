@@ -1,0 +1,52 @@
+https://stash.frib.msu.edu/users/martins/repos/puppet-ioc/browse/manifests = https://stash.frib.msu.edu/projects/DIAG
+
+autocalib = autocalib automatic claibration ioc
+
+bcm = bcm_struck_ioc bcm ioc
+
+bcmen = bcm_enable bcm enable ioc
+
+bcreport = bcm_report bcm report ioc
+
+bpm = bpm bpm ioc
+
+bpmarch = bpm-archiver-tool bpm archiver data ioc
+
+bpmenergy = bpm bpm energy ioc
+
+chargesel = chargesel charge selector ioc
+
+evr = mtca_evr evr ioc
+
+fths = fths fths ioc
+
+galil = galilrio galil ioc
+
+genavg = diag_genavg genavg ioc
+
+health = diag_health diagnostics health ioc
+
+ic = ic-ioc ion chamber ioc
+
+ipmi = mtca_ipmi ipmi ioc
+
+maintenance = motor-maintenance motor maintenance ioc
+
+ndioc = nd-ioc neutron detector ioc
+
+ndwarp = ndwarp camera ioc
+
+pfmscan = pfmScan profile monitor ioc
+
+restore = restore restore ioc
+
+scan = scan02 allison scanner ioc
+
+statusutil = statusUtil diagnostics status ioc
+
+stopcam = stopCam stop camera ioc
+
+tpmac = tpmacioc motor controller ioc
+
+wfgather = wfgather waveform gathering ioc
+

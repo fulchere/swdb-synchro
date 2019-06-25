@@ -1,0 +1,25 @@
+autocalib,Automatic Calibration IOC,False,-1,autocalib
+bcm_struck_ioc,BCM IOC,False,-1,bcm_struck_ioc
+bcm_enable,BCM Enable IOC,False,-1,bcm_enable
+bcm_report,BCM Report IOC,False,-1,bcm_report
+bpm,BPM IOC,False,-1,bpm
+bpm-archiver-tool,BPM Archiver Data IOC,False,-1,bpm-archiver-tool
+bpmenergy,BPM Energy IOC,False,-1,bpm
+chargesel,Charge Selector IOC,False,-1,chargesel
+mtca_evr,EVR IOC,False,-1,mtca_evr
+fths,FTHS IOC,False,-1,fths
+galilrio,Galil IOC,False,-1,galilrio
+diag_genavg,Genavg IOC,False,-1,diag_genavg
+diag_health,Diagnostics Health IOC,False,-1,diag_health
+ic-ioc,Ion Chamber IOC,False,-1,ic-ioc
+mtca_ipmi,IPMI IOC,False,-1,mtca_ipmi
+motor-maintenance,Motor Maintenance IOC,False,-1,motor-maintenance
+nd-ioc,Neutron Detector IOC,False,-1,nd-ioc
+ndwarp,Camera IOC,False,-1,ndwarp
+pfmScan,Profile Monitor IOC,False,-1,pfmScan
+restore,Restore IOC,False,-1,restore
+scan02,Allison Scanner IOC,False,-1,scan02
+statusUtil,Diagnostics Status IOC,False,-1,statusUtil
+stopCam,Stop Camera IOC,False,-1,stopCam
+tpmacioc,Motor Controller IOC,False,-1,tpmacioc
+wfgather,Waveform Gathering IOC,False,-1,wfgather
