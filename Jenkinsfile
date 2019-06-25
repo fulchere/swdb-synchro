@@ -18,7 +18,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'python swdb_update.py'
+                sh 'python -m swdb_update.py'
             }
         }
     }
