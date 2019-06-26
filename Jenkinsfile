@@ -1,5 +1,15 @@
 pipeline {
-  agent none
+    environment {
+        JAVA_OPTS="-Duser.home=${JENKINS_HOME}"
+        MAVEN_OPTS="${JAVA_OPTS}"
+        MAVEN_CONFIG="${JENKINS_HOME}/.m2"  // docker/maven specific.
+    }
+  agent {
+    docker {
+        image 'buildtool'
+        args "-e HOME=${JENKINS_HOME}"
+    }
+}
   stages {
     stage('Build') {
       agent {
