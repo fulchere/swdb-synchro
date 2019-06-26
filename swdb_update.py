@@ -93,7 +93,7 @@ def put_entry(sublist):
 
         remote_refs = {}
         g = git.cmd.Git()
-        for ref in g.ls_remote("ssh://git@stash.frib.msu.edu:7999/diag/"+name_tuple[4]+".git").split('\n'):
+        for ref in g.ls_remote("ssh://fulchere@stash.frib.msu.edu:7999/diag/"+name_tuple[4]+".git").split('\n'):
             hash_ref_list = ref.split('\t')
             remote_refs[hash_ref_list[1]] = hash_ref_list[0]
         sha = remote_refs['refs/heads/release/fc2']
