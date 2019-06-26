@@ -18,8 +18,8 @@ from getpass import getpass
 
 # Fix Jenkins missing imports
 #sys.path.append(os.environ['WORKSPACE'])
-import git
-import requests
+import /usr/lib/python3/dist-packages/git
+import /usr/lib/python3/dist-packages/requests
 
 # Consider using the Requests-OAuthlib libary
 
