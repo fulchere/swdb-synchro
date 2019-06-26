@@ -20,8 +20,8 @@ pipeline {
 
       }
       steps {withEnv(["HOME=${env.WORKSPACE}"]) {
-        sh "pip install -r gitpython --user"
-        sh "pip install -r requests --user"
+        sh "pip install gitpython --user"
+        sh "pip install requests --user"
         sh 'python3 -m swdb_update'
         }
       }
