@@ -24,7 +24,7 @@ pipeline {
         sh "pip install requests --user"
         sh 'echo $USER'
         sh 'echo $UID'
-        sh 'python3 -m swdb_update.py'
+        sh 'python3 -m swdb_update'
         }
       }
     }
