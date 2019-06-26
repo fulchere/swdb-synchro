@@ -23,7 +23,6 @@ pipeline {
         sh "pip install gitpython --user"
         sh "pip install requests --user"
         sh 'python3 -m swdb_update'
-        sh 'ssh -vvv fulchere@stash.frib.msu.edu'
         }
       }
     }
