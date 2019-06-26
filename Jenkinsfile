@@ -10,7 +10,6 @@ pipeline {
       }
       steps {
         sh 'python3 -m py_compile swdb_update.py'
-        sh 'export PYTHONPATH=$WORKSPACE:$PYTHONPATH'
       }
     }
     stage('Run') {
@@ -20,8 +19,11 @@ pipeline {
         }
 
       }
-      steps {
+      steps {withEnv(["HOME=${env.WORKSPACE}"]) {
+        sh "pip install -r gitpython --user"
+        sh "pip install -r requests --user"
         sh 'python3 -m swdb_update'
+        }
       }
     }
   }
