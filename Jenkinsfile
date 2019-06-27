@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       agent {
         docker {
-          image 'python:3.6.8-alpine3.9'
+          image 'python:3.6-jessie'
         }
 
       }
@@ -15,7 +15,7 @@ pipeline {
     stage('Run') {
       agent {
         docker {
-          image 'python:3.6.8-alpine3.9'
+          image 'python:3.6-jessie'
         }
       }
       steps {withEnv(["HOME=${env.WORKSPACE}"]) {
