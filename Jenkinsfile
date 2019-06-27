@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       agent {
         docker {
-          image 'ubuntu:18.04'
+          image '3.6-alpine3.8'
         }
 
       }
@@ -15,7 +15,7 @@ pipeline {
     stage('Run') {
       agent {
         docker {
-          image 'ubuntu:18.04'
+          image '3.6-alpine3.8'
         }
       }
       steps {withEnv(["HOME=${env.WORKSPACE}"]) {
