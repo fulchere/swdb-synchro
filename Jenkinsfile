@@ -16,7 +16,7 @@ pipeline {
       agent {
         docker {
           image 'python:3.6-jessie'
-          sh 'run -v /tmp/mypasswd:/etc/passwd:ro'
+          run '-v /tmp/mypasswd:/etc/passwd:ro'
         }
       }
       steps {withEnv(["HOME=${env.WORKSPACE}"]) {
