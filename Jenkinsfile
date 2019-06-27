@@ -1,5 +1,8 @@
 pipeline {
   agent none
+  wrap([$class: 'BuildUser']) {
+    echo "BUILD_USER that started this Pipeline: ${BUILD_USER}"
+  }
   stages {
     stage('Build') {
       agent {
