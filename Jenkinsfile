@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       agent {
         docker {
-          image 'python:3.7-stretch'
+          image 'ubuntu:18.04'
         }
 
       }
@@ -15,7 +15,7 @@ pipeline {
     stage('Run') {
       agent {
         docker {
-          image 'python:3.7-stretch'
+          image 'ubuntu:18.04'
         }
       }
       steps {withEnv(["HOME=${env.WORKSPACE}"]) {
