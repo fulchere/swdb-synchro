@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       agent {
         docker {
-          image '3.6-alpine3.8'
+          image '3.7.3-stretch'
         }
 
       }
@@ -15,7 +15,7 @@ pipeline {
     stage('Run') {
       agent {
         docker {
-          image '3.6-alpine3.8'
+          image '3.7.3-stretch'
         }
       }
       steps {withEnv(["HOME=${env.WORKSPACE}"]) {
