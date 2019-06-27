@@ -92,6 +92,8 @@ def put_entry(sublist):
         date_time = str(datetime.datetime.now())
 
         remote_refs = {}
+
+        os.environ['GIT_USERNAME'] = 'fulchere'
         g = git.cmd.Git()
         for ref in g.ls_remote("ssh://git@stash.frib.msu.edu:7999/diag/"+name_tuple[4]+".git").split('\n'):
             hash_ref_list = ref.split('\t')
