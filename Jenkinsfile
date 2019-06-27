@@ -21,7 +21,6 @@ pipeline {
       steps {withEnv(["HOME=${env.WORKSPACE}"]) {
         sh "pip install gitpython --user"
         sh "pip install requests --user"
-        sh 'ssh-keygen'
         sh 'python3 -m swdb_update'
         }
       }
