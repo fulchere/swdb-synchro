@@ -94,7 +94,7 @@ def put_entry(sublist):
 
         #print(os.environ['GIT_USERNAME'], os.environ['GIT_PASSWORD'])
         g = git.cmd.Git()
-        for ref in g.ls_remote("ssh://git@stash.frib.msu.edu:7999/diag/"+name_tuple[4]+".git").split('\n'):
+        for ref in g.ls_remote("ssh://fulcher@stash.frib.msu.edu:7999/diag/"+name_tuple[4]+".git").split('\n'):
             hash_ref_list = ref.split('\t')
             remote_refs[hash_ref_list[1]] = hash_ref_list[0]
         sha = remote_refs['refs/heads/release/fc2']
