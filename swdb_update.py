@@ -30,7 +30,7 @@ SWDB_BASE_URL = 'https://controls-dev.frib.msu.edu/swdb'
 
 print("Enter OAuth2 client credentials")
 client_id = "FULCHER" #client_id = input("client_id: ")
-client_secret = "lZjckorQMK9+7BDTYpqGL+fWIGSNmEWUm5jt2nJ9ncULfTfc4AEdpdEmYxvLS4QC" #client_secret = getpass("client_secret: ")
+client_secret = "" client_secret = getpass("client_secret: ")
 
 # Request an OAuth 2.0 Access Token
 r = requests.post(CAS_BASE_URL + '/oauth2.0/accessToken',
